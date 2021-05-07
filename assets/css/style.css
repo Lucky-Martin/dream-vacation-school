@@ -1,4 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
+
+/* Header */
+
+header {
+    position: relative;
+    background: url("../images/background.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 80vh;
+    z-index: 10;
+}
+header::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+header .navigation .logo {
+    float: left;
+}
+header .navigation .items {
+    float: right;
+}
+header .navigation .items ul {
+    list-style-type: none;
+}
+header .navigation .items ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+header .navigation .items ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* End header */
