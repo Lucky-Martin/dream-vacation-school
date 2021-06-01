@@ -4,6 +4,12 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
 
 /* Header */
 
@@ -24,6 +30,9 @@ header::before {
     background: rgba(0, 0, 0, 0.2);
     z-index: -1;
 }
+header .navigation {
+    padding: 25px 10px;
+}
 header .navigation .logo {
     float: left;
 }
@@ -32,6 +41,8 @@ header .navigation .items {
 }
 header .navigation .items ul {
     list-style-type: none;
+    margin: 0;
+    padding-top: 5px;
 }
 header .navigation .items ul li {
     display: inline-block;
@@ -40,9 +51,153 @@ header .navigation .items ul li {
 header .navigation .items ul li a {
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 16px;
 }
+header .navigation .expand {
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+header .navigation .expand i {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+header .text_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+header .text_content h1 {
+    text-transform: capitalize;
+}
+header .text_content h4 {
+    font-size: 20px;
+}
 
 /* End header */
+
+/*Offers*/
+#offers {
+    background: #F5F5F5;
+    padding: 30px 0 40px 0;
+}
+#offers .offers_title,
+#offers .tours_text {
+    text-align: center;
+}
+#offers .offers_title {
+    font-weight: bold;
+}
+#offers .tours_text {
+    color: #898989;
+    font-size: 20px;
+}
+#offers .offer {
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+    border-radius: 4px;
+    margin: 20px 0;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+#offers .offer:hover {
+    transform: scale(1.05);
+}
+#offers .offer img {
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+#offers .offer .offer_info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+#offers .offer .offer_info h3 {
+    margin: 0;
+    padding: 0;
+}
+#offers .offer .offer_info .destination {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*End offers*/
+
+/*Reviews*/
+
+#reviews {
+    padding: 30px 0 40px 0;
+}
+#reviews .reviews_title,
+#reviews .reviews_text {
+    text-align: center;
+}
+#reviews .reviews_title {
+    font-weight: bold;
+}
+#reviews .reviews_text {
+    color: #898989;
+    font-size: 20px;
+}
+#reviews .review {
+    text-align: center;
+    margin-top: 40px;
+}
+#reviews .review img {
+    border-radius: 50%;
+    border: 2px solid #F5F5F5;
+    padding: 10px;
+}
+#reviews .review .name {
+    margin: 30px 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+#reviews .review .testimonial {
+    color: #898989;
+    font-size: 19px;
+}
+
+/*End reviews*/
+
+/*Footer*/
+
+footer {
+    padding: 50px 0 20px 0;
+}
+footer .col-12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer h3 {
+    font-size: 19px;
+    color: #898989;
+    margin: 0;
+}
+footer .float-right ul {
+    list-style: none;
+    margin: 0;
+}
+footer .float-right ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+footer .float-right ul li a {
+    color: #898989;
+    font-size: 19px;
+    margin: 0;
+}
+
+/*End footer*/
