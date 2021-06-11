@@ -171,6 +171,36 @@ header .text_content h4 {
 
 /*End reviews*/
 
+/*Contacts*/
+#contacts .contacts_title,
+#contacts .contacts_text {
+    text-align: center;
+}
+#contacts .contacts_title {
+    font-weight: bold;
+}
+#contacts .contacts_text {
+    color: #898989;
+    font-size: 20px;
+}
+#contacts input,
+#contacts textarea {
+    border: 1px solid #898989;
+}
+#contacts .form-control {
+    height: 42px;
+}
+#contacts label {
+    color: #000000;
+}
+#contacts small {
+    color: #898989;
+}
+#contacts textarea {
+    max-width: 100%;
+    min-width: 100%;
+}
+
 /*Footer*/
 
 footer {
